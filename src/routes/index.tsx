@@ -18,6 +18,7 @@ import {
   ArrowRight,
   Quote,
   Flower2,
+  Cake,
 } from "lucide-react";
 import bgTexture from "@/assets/bg-texture.jpg";
 import { PetalRain } from "@/components/PetalRain";
