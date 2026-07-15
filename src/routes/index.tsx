@@ -26,11 +26,11 @@ import { PetalRain } from "@/components/PetalRain";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Areeba Nadeem — Digital Marketing Specialist & Educator" },
+      { title: "Areeba — Digital Marketing Specialist & Educator" },
       {
         name: "description",
         content:
-          "Portfolio of Areeba Nadeem — digital marketing, social media strategy, e-commerce management and Montessori education. Based in Rawalpindi, Pakistan.",
+          "Portfolio of Areeba — digital marketing, social media strategy, e-commerce management and Montessori education. Based in Rawalpindi, Pakistan.",
       },
     ],
   }),
@@ -180,7 +180,7 @@ function Nav() {
       <div className="glass-card rounded-full flex items-center justify-between px-5 py-2.5">
         <a href="#top" className="flex items-center gap-2 font-display text-lg">
           <Flower2 className="h-5 w-5 text-primary" />
-          <span className="text-gradient-rose font-semibold tracking-wide">Areeba N.</span>
+          <span className="text-gradient-rose font-semibold tracking-wide">Areeba</span>
         </a>
         <ul className="hidden md:flex items-center gap-1 text-sm">
           {NAV.map((n) => (
@@ -239,8 +239,7 @@ function Hero() {
           transition={{ delay: 0.5, duration: 0.9 }}
           className="mt-2 font-display text-[clamp(3.5rem,12vw,10rem)] leading-[0.9] font-medium tracking-tight"
         >
-          <span className="text-shimmer italic">Areeba</span>{" "}
-          <span className="text-gradient-rose">Nadeem</span>
+          <span className="text-gradient-rose italic">Areeba</span>
         </motion.h1>
 
         <motion.p
@@ -566,7 +565,7 @@ function Contact() {
               href={CONTACT.linkedin}
               icon={<LinkedInLogo className="h-7 w-7" />}
               label="LinkedIn"
-              value="areeba-nadeem"
+              value="areeba"
               accent="from-[#0A66C2]/40 to-[#0A66C2]/10"
             />
           </div>
@@ -640,7 +639,7 @@ function Footer() {
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
         <div className="flex items-center gap-2 font-display">
           <Flower2 className="h-4 w-4 text-primary" />
-          <span className="text-gradient-rose font-semibold">Areeba Nadeem</span>
+          <span className="text-gradient-rose font-semibold">Areeba</span>
           <span>· Crafted with</span>
           <Heart className="h-3.5 w-3.5 text-primary fill-primary" />
         </div>
