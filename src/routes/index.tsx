@@ -40,10 +40,12 @@ const CONTACT = {
   email: "theareeba350@gmail.com",
   phone: "+923700533737",
   phoneDisplay: "+92 370 0533737",
-  linkedin: "https://www.linkedin.com/in/areeba-nadeem-478602361",
-  whatsapp: "https://wa.me/923700533737",
+  linkedin: "https://www.linkedin.com/in/areeba-nadeem-478602361/",
+  whatsapp: "https://wa.me/923700533737?text=Hi%20Areeba%2C%20I%20saw%20your%20portfolio%20%E2%9C%A8",
   gmail:
     "https://mail.google.com/mail/?view=cm&fs=1&to=theareeba350@gmail.com&su=Hello%20Areeba",
+  address: "Rawalpindi, Punjab, Pakistan",
+  birthday: "May 28",
 };
 
 const NAV = [
