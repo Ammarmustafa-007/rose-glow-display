@@ -582,9 +582,17 @@ function Contact() {
               theareeba350@gmail.com
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-              <MapPin className="h-3 w-3 text-primary" /> Rawalpindi, Punjab, Pakistan
-            </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5">
+                <MapPin className="h-3 w-3 text-primary" /> {CONTACT.address}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5">
+                <MessageCircle className="h-3 w-3 text-primary" /> {CONTACT.phoneDisplay}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5">
+                <Cake className="h-3 w-3 text-primary" /> Birthday · {CONTACT.birthday}
+              </span>
+            </div>
           </div>
         </motion.div>
       </div>
