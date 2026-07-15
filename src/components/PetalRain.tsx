@@ -7,11 +7,10 @@ export function PetalRain({ count = 22 }: { count?: number }) {
       Array.from({ length: count }).map((_, i) => ({
         id: i,
         left: Math.random() * 100,
-        delay: Math.random() * 15,
-        duration: 12 + Math.random() * 14,
+        top: Math.random() * 100,
         size: 10 + Math.random() * 22,
         rotate: Math.random() * 360,
-        opacity: 0.25 + Math.random() * 0.55,
+        opacity: 0.05 + Math.random() * 0.15,
         hue: Math.random() > 0.5 ? 12 : 350,
       })),
     [count],
@@ -26,12 +25,11 @@ export function PetalRain({ count = 22 }: { count?: number }) {
           className="absolute"
           style={{
             left: `${p.left}%`,
-            top: "-40px",
+            top: `${p.top}%`,
             width: p.size,
             height: p.size,
             opacity: p.opacity,
             transform: `rotate(${p.rotate}deg)`,
-            animation: `fall ${p.duration}s linear ${p.delay}s infinite`,
             filter: "drop-shadow(0 2px 6px oklch(0.4 0.15 12 / 0.5))",
           }}
         >
