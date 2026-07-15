@@ -18,6 +18,7 @@ import {
   ArrowRight,
   Quote,
   Flower2,
+  Cake,
 } from "lucide-react";
 import bgTexture from "@/assets/bg-texture.jpg";
 import { PetalRain } from "@/components/PetalRain";
@@ -40,10 +41,12 @@ const CONTACT = {
   email: "theareeba350@gmail.com",
   phone: "+923700533737",
   phoneDisplay: "+92 370 0533737",
-  linkedin: "https://www.linkedin.com/in/areeba-nadeem-478602361",
-  whatsapp: "https://wa.me/923700533737",
+  linkedin: "https://www.linkedin.com/in/areeba-nadeem-478602361/",
+  whatsapp: "https://wa.me/923700533737?text=Hi%20Areeba%2C%20I%20saw%20your%20portfolio%20%E2%9C%A8",
   gmail:
     "https://mail.google.com/mail/?view=cm&fs=1&to=theareeba350@gmail.com&su=Hello%20Areeba",
+  address: "Rawalpindi, Punjab, Pakistan",
+  birthday: "May 28",
 };
 
 const NAV = [
@@ -580,9 +583,17 @@ function Contact() {
               theareeba350@gmail.com
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-              <MapPin className="h-3 w-3 text-primary" /> Rawalpindi, Punjab, Pakistan
-            </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5">
+                <MapPin className="h-3 w-3 text-primary" /> {CONTACT.address}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5">
+                <MessageCircle className="h-3 w-3 text-primary" /> {CONTACT.phoneDisplay}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5">
+                <Cake className="h-3 w-3 text-primary" /> Birthday · {CONTACT.birthday}
+              </span>
+            </div>
           </div>
         </motion.div>
       </div>
